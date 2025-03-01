@@ -43,14 +43,14 @@
                 <div tabindex="0" role="" class="">
                     <div class="flex items-center gap-4">
                         <input type="checkbox" checked="checked" class="checkbox checkbox-primary" />
-                        <span class="text-3xl font-bold">27</span>
+                        <span id="Increase" class="text-3xl font-bold">27</span>
                     </div>
                 </div>
             </div>
             <div class="">
-                <div tabindex="0" role="button" class="btn btn-circle avatar">
+                <div id="color-mode-btn" tabindex="0" role="button" class="btn btn-circle avatar">
                     <div class="w-10 rounded-full">
-                        <img alt="Tailwind CSS Navbar component"
+                        <img onclick="imageToGif()" id="myImage" alt="Tailwind CSS Navbar component"
                             src="assets/color-mode-48.png" />
                     </div>
                 </div>
@@ -72,12 +72,12 @@
                                     </div>
                                 </div>
                                 <div class="flex flex-col">
-                                    <span class="">Task Assigned </span>
-                                    <span id="" class="">05</span>
+                                    <span class="text-lg font-medium">Task Assigned </span>
+                                    <span id="Decrease" class="font-bold text-xl">06</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="bg-[#F4F7FF] p-4 px-12 rounded-lg shadow col-span-2 bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] flex items-center gap-6">
+                        <div id="blog-page" class="cursor-pointer bg-[#F4F7FF] p-4 px-12 rounded-lg shadow col-span-2 bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] flex items-center gap-6">
                             <img src="assets/board.png" alt="">
                             <h2 class="text-white font-medium text-lg">Discover Something 
                                 <br>New Today!</h2>
@@ -88,13 +88,12 @@
                                     <img src="assets/calender-64.png" alt="">
                                 </div>
                                 <div class="flex flex-col">
-                                    <span>Wed ,<br>
-                                    Jul 28 2025</span>
+                                    <span class="date-card text-lg font-bold"></span>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="grid grid-cols-3 gap-4 p-4">
+                    <div id="card-container" class="grid grid-cols-3 gap-4 p-4">
                         <div class="bg-[#F4F7FF] rounded-lg shadow col-span-1">
                             <div class="card w-full">
                                 <div class="card-body space-y-2">
@@ -120,7 +119,7 @@
                             <div class="card w-full">
                                 <div class="card-body space-y-2">
                                     <span class="badge badge-md p-4 text-[#00303C]">ShopEase</span>
-                                    <h2 class="card-title">Fix Mobile Button Issue</h2>
+                                    <h2 class="card-title">Add Dark Mode</h2>
                                     <div class="bg-white p-2 items-center border-b border-dashed border-[#3752FD33]">
                                         <p class="text-sm text-black opacity-60">Debug using Chrome DevTools, check for overlapping elements, and
                                             ensure onClick works properly
@@ -142,7 +141,7 @@
                             <div class="card w-full">
                                 <div class="card-body space-y-2">
                                     <span class="badge badge-md p-4 text-[#00303C]">ShopEase</span>
-                                    <h2 class="card-title">Fix Mobile Button Issue</h2>
+                                    <h2 class="card-title">Optimize Home page </h2>
                                     <div class="bg-white p-2 items-center border-b border-dashed border-[#3752FD33]">
                                         <p class="text-sm text-black opacity-60">Debug using Chrome DevTools, check for overlapping elements, and
                                             ensure onClick works properly
@@ -164,7 +163,7 @@
                             <div class="card w-full">
                                 <div class="card-body space-y-2">
                                     <span class="badge badge-md p-4 text-[#00303C]">ShopEase</span>
-                                    <h2 class="card-title">Fix Mobile Button Issue</h2>
+                                    <h2 class="card-title">Add new emoji 🤲</h2>
                                     <div class="bg-white p-2 items-center border-b border-dashed border-[#3752FD33]">
                                         <p class="text-sm text-black opacity-60">Debug using Chrome DevTools, check for overlapping elements, and
                                             ensure onClick works properly
@@ -186,7 +185,7 @@
                             <div class="card w-full">
                                 <div class="card-body space-y-2">
                                     <span class="badge badge-md p-4 text-[#00303C]">ShopEase</span>
-                                    <h2 class="card-title">Fix Mobile Button Issue</h2>
+                                    <h2 class="card-title">Integrate OpenAI API</h2>
                                     <div class="bg-white p-2 items-center border-b border-dashed border-[#3752FD33]">
                                         <p class="text-sm text-black opacity-60">Debug using Chrome DevTools, check for overlapping elements, and
                                             ensure onClick works properly
@@ -208,7 +207,7 @@
                             <div class="card w-full">
                                 <div class="card-body space-y-2">
                                     <span class="badge badge-md p-4 text-[#00303C]">ShopEase</span>
-                                    <h2 class="card-title">Fix Mobile Button Issue</h2>
+                                    <h2 class="card-title">Improve Job searching</h2>
                                     <div class="bg-white p-2 items-center border-b border-dashed border-[#3752FD33]">
                                         <p class="text-sm text-black opacity-60">Debug using Chrome DevTools, check for overlapping elements, and
                                             ensure onClick works properly
@@ -231,13 +230,16 @@
                 <!-- Right Sidebar -->
                 <aside class="col-span-1 bg-white rounded-2xl shadow">
                    <div class="border-b border-dashed border-[#3752FD33] p-4">
-                    <dic class="flex w-2/4 mx-auto items-center p-2">
+                    <div class="flex w-2/4 mx-auto items-center p-2">
                         <img src="assets/history-24.png" alt="">
                         <span class="text-lg font-medium">Activity Log</span>
-                    </dic>
-                    <div class="w-2/4 mx-auto p-3">
-                        <button class="btn btn-primary">Clear History</button>
                     </div>
+                    <div class="w-2/4 mx-auto p-3">
+                        <button id="clear-btn" class="btn btn-primary">Clear History</button>
+                    </div>
+                   </div>
+                   <div id="Sidebar" class="p-4 text-lg font-semibold space-y-4">
+                        
                    </div>
                 </aside>
             </div>
@@ -245,6 +247,6 @@
     </section> 
     
     
-    
+    <script src="script/script.js"></script>
 </body>
 </html>
