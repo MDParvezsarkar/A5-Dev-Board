@@ -1,5 +1,6 @@
 document.getElementById("blog-page").addEventListener("click", function() {
-    window.location.href = "https://mdparvezsarkar.github.io/blog.html";
+    window.location.href =
+      "https://mdparvezsarkar.github.io/A5-Dev-Board/blog.html";
 });
 // completed button task
 let clickedButtonsCount = 0;
