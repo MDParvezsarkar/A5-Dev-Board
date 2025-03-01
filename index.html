@@ -15,7 +15,8 @@
         rel="stylesheet">
     <title>Dev Board</title>
 </head>
-<body class="font-poppins bg-[#F4F7FF] h-svh py-8">
+<body class="font-poppins bg-[#F4F7FF] py-8">
+    <!-- navbar -->
     <div class="navbar bg-base-100 shadow-sm w-11/12 mx-auto rounded-lg p-4">
         <div class="flex-1 flex items-center gap-4">
             <svg width="51.240906" height="51.240875" viewBox="0 0 51.2409 51.2409" fill="none" xmlns="http://www.w3.org/2000/svg"
@@ -40,9 +41,9 @@
         <div class="flex-none flex items-center gap-4">
             <div role="button" class="btn rounded-full">
                 <div tabindex="0" role="" class="">
-                    <div class="flex items-center">
+                    <div class="flex items-center gap-4">
                         <input type="checkbox" checked="checked" class="checkbox checkbox-primary" />
-                        <span class="text-2xl">27</span>
+                        <span class="text-3xl font-bold">27</span>
                     </div>
                 </div>
             </div>
@@ -56,6 +57,194 @@
             </div>
         </div>
     </div>
+    <!-- main section  -->
+     <section class="w-11/12 mx-auto">
+        <div class="min-h-screen">
+            <div class="mt-6 grid grid-cols-4 gap-4">
+                <!-- Main Task content -->
+                <div class="col-span-3 bg-white rounded-2xl shadow">
+                    <div class="grid grid-cols-4 gap-4 p-4 border-b border-dashed border-[#3752FD33]">
+                        <div class="bg-[#F4F7FF] p-4 rounded-lg shadow col-span-1 flex justify-center">
+                            <div class="flex items-center justify-center gap-4">
+                                <div class="avatar avatar-placeholder">
+                                    <div class="bg-white text-neutral-content w-8 rounded-full p-6">
+                                        <input type="checkbox" checked="checked" class="checkbox checkbox-primary" />
+                                    </div>
+                                </div>
+                                <div class="flex flex-col">
+                                    <span class="">Task Assigned </span>
+                                    <span id="" class="">05</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-[#F4F7FF] p-4 px-12 rounded-lg shadow col-span-2 bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] flex items-center gap-6">
+                            <img src="assets/board.png" alt="">
+                            <h2 class="text-white font-medium text-lg">Discover Something 
+                                <br>New Today!</h2>
+                        </div>
+                        <div class="bg-[#F4F7FF] p-4 rounded-lg shadow col-span-1">
+                            <div class="flex items-center justify-center gap-4">
+                                <div class="avatar avatar-placeholder">
+                                    <img src="assets/calender-64.png" alt="">
+                                </div>
+                                <div class="flex flex-col">
+                                    <span>Wed ,<br>
+                                    Jul 28 2025</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-3 gap-4 p-4">
+                        <div class="bg-[#F4F7FF] rounded-lg shadow col-span-1">
+                            <div class="card w-full">
+                                <div class="card-body space-y-2">
+                                    <span class="badge badge-md p-4 text-[#00303C]">ShopEase</span>
+                                    <h2 class="card-title">Fix Mobile Button Issue</h2>
+                                    <div class="bg-white p-2 items-center border-b border-dashed border-[#3752FD33]">
+                                        <p class="text-sm text-black opacity-60">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                                            and ensure onClick works properly</p>
+                                    </div>
+                                    <div class="flex w-full justify-between">
+                                        <div class="">
+                                            <span class="opacity-60">Deadline</span><br>
+                                            <span class="text-xs uppercase font-semibold ">21 March 2025</span>
+                                        </div>
+                                        <div class="card-action">
+                                            <button class="btn btn-primary">Completed</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-[#F4F7FF] rounded-lg shadow col-span-1">
+                            <div class="card w-full">
+                                <div class="card-body space-y-2">
+                                    <span class="badge badge-md p-4 text-[#00303C]">ShopEase</span>
+                                    <h2 class="card-title">Fix Mobile Button Issue</h2>
+                                    <div class="bg-white p-2 items-center border-b border-dashed border-[#3752FD33]">
+                                        <p class="text-sm text-black opacity-60">Debug using Chrome DevTools, check for overlapping elements, and
+                                            ensure onClick works properly
+                                            and ensure onClick works properly</p>
+                                    </div>
+                                    <div class="flex w-full justify-between">
+                                        <div class="">
+                                            <span class="opacity-60">Deadline</span><br>
+                                            <span class="text-xs uppercase font-semibold ">21 March 2025</span>
+                                        </div>
+                                        <div class="card-action">
+                                            <button class="btn btn-primary">Completed</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-[#F4F7FF] rounded-lg shadow col-span-1">
+                            <div class="card w-full">
+                                <div class="card-body space-y-2">
+                                    <span class="badge badge-md p-4 text-[#00303C]">ShopEase</span>
+                                    <h2 class="card-title">Fix Mobile Button Issue</h2>
+                                    <div class="bg-white p-2 items-center border-b border-dashed border-[#3752FD33]">
+                                        <p class="text-sm text-black opacity-60">Debug using Chrome DevTools, check for overlapping elements, and
+                                            ensure onClick works properly
+                                            and ensure onClick works properly</p>
+                                    </div>
+                                    <div class="flex w-full justify-between">
+                                        <div class="">
+                                            <span class="opacity-60">Deadline</span><br>
+                                            <span class="text-xs uppercase font-semibold ">21 March 2025</span>
+                                        </div>
+                                        <div class="card-action">
+                                            <button class="btn btn-primary">Completed</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-[#F4F7FF] rounded-lg shadow col-span-1">
+                            <div class="card w-full">
+                                <div class="card-body space-y-2">
+                                    <span class="badge badge-md p-4 text-[#00303C]">ShopEase</span>
+                                    <h2 class="card-title">Fix Mobile Button Issue</h2>
+                                    <div class="bg-white p-2 items-center border-b border-dashed border-[#3752FD33]">
+                                        <p class="text-sm text-black opacity-60">Debug using Chrome DevTools, check for overlapping elements, and
+                                            ensure onClick works properly
+                                            and ensure onClick works properly</p>
+                                    </div>
+                                    <div class="flex w-full justify-between">
+                                        <div class="">
+                                            <span class="opacity-60">Deadline</span><br>
+                                            <span class="text-xs uppercase font-semibold ">21 March 2025</span>
+                                        </div>
+                                        <div class="card-action">
+                                            <button class="btn btn-primary">Completed</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-[#F4F7FF] rounded-lg shadow col-span-1">
+                            <div class="card w-full">
+                                <div class="card-body space-y-2">
+                                    <span class="badge badge-md p-4 text-[#00303C]">ShopEase</span>
+                                    <h2 class="card-title">Fix Mobile Button Issue</h2>
+                                    <div class="bg-white p-2 items-center border-b border-dashed border-[#3752FD33]">
+                                        <p class="text-sm text-black opacity-60">Debug using Chrome DevTools, check for overlapping elements, and
+                                            ensure onClick works properly
+                                            and ensure onClick works properly</p>
+                                    </div>
+                                    <div class="flex w-full justify-between">
+                                        <div class="">
+                                            <span class="opacity-60">Deadline</span><br>
+                                            <span class="text-xs uppercase font-semibold ">21 March 2025</span>
+                                        </div>
+                                        <div class="card-action">
+                                            <button class="btn btn-primary">Completed</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-[#F4F7FF] rounded-lg shadow col-span-1">
+                            <div class="card w-full">
+                                <div class="card-body space-y-2">
+                                    <span class="badge badge-md p-4 text-[#00303C]">ShopEase</span>
+                                    <h2 class="card-title">Fix Mobile Button Issue</h2>
+                                    <div class="bg-white p-2 items-center border-b border-dashed border-[#3752FD33]">
+                                        <p class="text-sm text-black opacity-60">Debug using Chrome DevTools, check for overlapping elements, and
+                                            ensure onClick works properly
+                                            and ensure onClick works properly</p>
+                                    </div>
+                                    <div class="flex w-full justify-between">
+                                        <div class="">
+                                            <span class="opacity-60">Deadline</span><br>
+                                            <span class="text-xs uppercase font-semibold ">21 March 2025</span>
+                                        </div>
+                                        <div class="card-action">
+                                            <button class="btn btn-primary">Completed</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Right Sidebar -->
+                <aside class="col-span-1 bg-white rounded-2xl shadow">
+                   <div class="border-b border-dashed border-[#3752FD33] p-4">
+                    <dic class="flex w-2/4 mx-auto items-center p-2">
+                        <img src="assets/history-24.png" alt="">
+                        <span class="text-lg font-medium">Activity Log</span>
+                    </dic>
+                    <div class="w-2/4 mx-auto p-3">
+                        <button class="btn btn-primary">Clear History</button>
+                    </div>
+                   </div>
+                </aside>
+            </div>
+        </div>
+    </section> 
+    
+    
     
 </body>
 </html>
