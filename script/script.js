@@ -1,5 +1,5 @@
 document.getElementById("blog-page").addEventListener("click", function() {
-    window.location.href = "../blog.html";
+    window.location.href = "https://mdparvezsarkar.github.io/blog.html";
 });
 // completed button task
 let clickedButtonsCount = 0;
@@ -16,7 +16,7 @@ document.querySelectorAll("#card-container button").forEach(function(button) {
       button.disabled = true;
       const fixedTime = new Date().toLocaleTimeString();
       const title = button.closest('.card').querySelector(".card-title").innerText;
-      const message = `<h1>You have completed the task: "${title}" at ${fixedTime}</h1>`;
+      const message = `<h1 class="bg-[#F4F7FF] p-4 rounded-lg">You have completed the task: "${title}" at ${fixedTime}</h1>`;
 
       document.getElementById("Sidebar").innerHTML += message;
 
